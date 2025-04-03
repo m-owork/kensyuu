@@ -2,18 +2,10 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
- System.out.println("【数あてゲーム】");
- int ans = new java.util.Random().nextInt(10);
- for (int i = 0; i < 5; i++) {
-	 System.out.println("0～9の数字を入力してください");
-	 int num = new java.util.Scanner(System.in).nextInt();
-	 if (ans == num) {
-		 System.out.println("アタリ！");
-		 break;
-	 } else {
-		 System.out.println("ハズレ");
-	 }
- }
- System.out.println("ゲームを終了します");
- 	 }
- }
+    	int[] scores = {20, 30, 40, 50, 80};
+    	int sum = scores[0] + scores[1] + scores[2] + scores[3] + scores[4];
+    	int avg = sum / scores.length;
+    	System.out.println("合計点" + sum);
+    	System.out.println("平均点" + avg);
+    }
+}
