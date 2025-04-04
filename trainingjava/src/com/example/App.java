@@ -1,17 +1,18 @@
 package com.example;
 
 public class App {
-public static int[] makeArray(int size) {
-	int[] newArray = new int[size];
-	for(int i = 0; i < newArray.length; i++) {
-		newArray[i] = i;
-	}
-	return newArray;
-}
 public static void main(String[] args) {
-	int[] array = makeArray(3);
-	for(int i : array) {
-		System.out.println(i);
-	}
-	}
+	introduceOneself();
+}
+public static void introduceOneself() {
+	String name = "Otono";
+	int age = 35;
+	double height = 182.0;
+	String zodiac = "馬";
+	System.out.println("私の名前は" + name + "です");
+	System.out.println("年齢は" + age + "歳です");
+	System.out.println("身長は" + height + "cmです");
+	System.out.println(zodiac + "年生まれです");
+	
+}
 }
