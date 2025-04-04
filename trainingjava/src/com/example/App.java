@@ -2,13 +2,11 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-int[] numbers = {3, 4, 9};
-System.out.println("1桁の数字を入力してください");
-int input = new java.util.Scanner(System.in).nextInt();
-for (int nm : numbers) {
-	if(nm == input) {
-	System.out.println("アタリ！");
-}
+    	add(100, 20);
+    	add(200, 90);
     }
-}
-}
+    public static void add(int x, int y) {
+    	int answer = x + y;
+    	System.out.println(x + "+" + y + "=" + answer);
+    }
+    }
