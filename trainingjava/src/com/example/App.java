@@ -1,12 +1,12 @@
 package com.example;
 
 public class App {
-    public static void main(String[] args) {
-    	add(100, 20);
-    	add(200, 90);
-    }
-    public static void add(int x, int y) {
+	public static int add(int x, int y) {
     	int answer = x + y;
-    	System.out.println(x + "+" + y + "=" + answer);
+    	return answer;
+    }
+    public static void main(String[] args) {
+    	int answer = add(200, 10);
+    	System.out.println("100 + 10 = " + answer);
     }
     }
