@@ -2,10 +2,9 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-int[] arrayA = {1, 2, 3};
-int[] arrayB;
-arrayB = arrayA;
-arrayB[0] = 100;
-System.out.println(arrayA[0]);
-}
+    	int[] scores;
+    	scores = new int[5];
+    	scores[1] = 30;
+    	System.out.println(scores[1]);
+    }
 }
