@@ -2,17 +2,15 @@ package com.example;
 
 public class App {
 public static void main(String[] args) {
-	introduceOneself();
-}
-public static void introduceOneself() {
-	String name = "Otono";
-	int age = 35;
-	double height = 182.0;
-	String zodiac = "馬";
-	System.out.println("私の名前は" + name + "です");
-	System.out.println("年齢は" + age + "歳です");
-	System.out.println("身長は" + height + "cmです");
-	System.out.println(zodiac + "年生まれです");
-	
-}
+	String title = "お問い合わせの件について";
+	String address = "nantoka@kantoka.com";
+	String text = "お問い合わせいただき誠にありがとうございます。";
+	email(title, address, text);
+	}
+	public static void email(String title, String address, String text) {
+		System.out.println("メールの宛先アドレスに以下のメールを送信しました");
+		System.out.println("件名:" + title);
+		System.out.println("本文:" + text);
+		
+	}
 }
