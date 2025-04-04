@@ -2,12 +2,13 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-int[] moneyList = {121902, 8302, 55100};
-for (int i = 0; i < moneyList.length; i++) {
-	System.out.println(moneyList[i]);
-}
-for (int mL : moneyList) {
-	System.out.println(mL);
+int[] numbers = {3, 4, 9};
+System.out.println("1桁の数字を入力してください");
+int input = new java.util.Scanner(System.in).nextInt();
+for (int nm : numbers) {
+	if(nm == input) {
+	System.out.println("アタリ！");
 }
     }
+}
 }
