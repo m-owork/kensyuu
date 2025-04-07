@@ -2,9 +2,13 @@ package com.example;
 
 public class App {
 public static void main(String[] args) {
-int a = 10; int b= 2;
-int total = CalcLogic.tasu(a, b);
-int delta = CalcLogic.hiku(a, b);
-System.out.println("足すと" + total + "、引くと" + delta);
+Hero h = new Hero();
+h.name = "ユーシャ";
+h.hp = 100;
+System.out.println("新たな勇者" + h.name + "が誕生しました");
+h.sit(5);
+h.slip();
+h.sit(25);
+h.run();
 }
 }
