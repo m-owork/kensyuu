@@ -6,6 +6,10 @@ Hero h = new Hero();
 h.name = "ユーシャ";
 h.hp = 100;
 
+exam1 c = new exam1();
+c.name = "クレリック";
+
+
 Matango m1 = new Matango();
 m1.hp = 50;
 m1.suffix = 'A';
@@ -18,6 +22,8 @@ System.out.println("お化けキノコAが現れた！お化けキノコBが現�
 h.slip();
 m1.run();
 m2.run();
+c.heal();
+c.pray(5);
 h.run();
 }
 }
