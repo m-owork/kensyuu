@@ -1,6 +1,6 @@
 package com.example;
 
-public class exam1 extends Hero {
+public class exam1 extends exam2 {
 	boolean flying;
 	public void fly() {
 		this.flying = true;
