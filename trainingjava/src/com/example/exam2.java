@@ -1,15 +1,16 @@
 package com.example;
 
-public class exam2 {
-	String name = "ヒーロー";
-	int hp = 100;
+public abstract class exam2 {
+	String name;
+	int price;
+	String color;
 	
-	public void attack(Matango m) {
-		System.out.println(this.name + "の攻撃");
-		m.hp -= 5;
-		System.out.println("5ポイントのダメージを与えた");
+	public exam2(String name, int price, String color) {
+		this.name = name;
+		this.price = price;
+		this.color = color;
 	}
-	public void run() {
-		System.out.println(this.name + "は逃げ出した");
+	public String getName() { return this.name; }
+	public int getPrice() { return this.price; }
+	public String getColor() { return this.color; }
 	}
-}

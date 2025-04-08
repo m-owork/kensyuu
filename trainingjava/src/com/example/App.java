@@ -1,11 +1,10 @@
 package com.example;
 
-public class App {
-public static void main(String[] args) {
-	exam1 sh = new exam1();
-	exam2 h = new exam2();
-	Matango m = new Matango();
-	sh.fly();
-	sh.attack(m);
-}
+public class App extends exam2 {
+	String isbn;
+	public App(String name, int price, String color, String isbn) {
+		super(name, price, color);
+		this.isbn = isbn;
+		}
+	public String getIsbn() { return this.isbn; }
 }
